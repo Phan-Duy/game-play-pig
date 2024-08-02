@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Pig!</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off" class="playpig__form">
+        <h1>Let's Play Pig!</h1>
+        <fieldset>
+          <legend>Rules</legend>
+          <ul>
+            <li>The first player to reach 100 points wins.</li>
+            <li>Players take turns rolling the die.</li>
+            <li>A turn ends when a player rolls a 1 or chooses to hold.</li>
+            <li>
+              If a player rolls a 1, they lose all points earned during that
+              turn.
+            </li>
+            <li>
+              If a player holds, the points earned during the turn are added to
+              their total.
+            </li>
+          </ul>
+        </fieldset>
+        <div class="player">
+          <div class="player__action">
+            <div class="player1">
+              <div class="player_name">Player 1</div>
+              <input type="text" class="player__score1" value="0" readonly />
+            </div>
+            <div class="player2">
+              <div class="player_name">Player 2</div>
+              <input type="text" class="player__score2" value="0" readonly />
+            </div>
+          </div>
+          <div class="current__player">
+            <div class="current__player__action">
+              <div>Current Player :</div>
+              <input type="text" class="player__turn" readonly />
+            </div>
+            <div class="Point__action">
+              <div>Point :</div>
+              <input type="text" class="points" readonly />
+            </div>
+          </div>
+
+          <div class="button_action">
+            <div class="play__btn">
+              <div class="roll__dice__btn btn">Roll Dice</div>
+              <div class="hold__btn btn">Hold</div>
+            </div>
+
+            <div class="new__game__btn btn">New Game</div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./Script/index.js" defer></script>
+  </body>
+</html>

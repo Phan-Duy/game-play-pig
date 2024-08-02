@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* style.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+}
+
+h1 {
+  color: blue;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.playpig__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.playpig__form fieldset {
+  border: 1px solid #151313;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+.playpig__form legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.playpig__form ul {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.player__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player1,
+.player2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+}
+
+.player_name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.player__score1,
+.player__score2 {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.current__player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current__player__action,
+.Point__action {
+  display: flex;
+  align-items: center;
+}
+
+.player__turn,
+.points {
+  width: 65px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.button_action {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.play__btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.roll__dice__btn,
+.hold__btn,
+.new__game__btn {
+  width: 48%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.roll__dice__btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.roll__dice__btn:hover {
+  background-color: #45a049;
+}
+
+.hold__btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.hold__btn:hover {
+  background-color: #1976d2;
+}
+
+.new__game__btn {
+  background-color: #f44336;
+  color: white;
+  width: 100%;
+}
+
+.new__game__btn:hover {
+  background-color: #d32f2f;
+}
